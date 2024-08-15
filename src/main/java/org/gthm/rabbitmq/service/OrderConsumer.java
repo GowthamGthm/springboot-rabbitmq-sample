@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class OrderConsumer {
 
 
-//    @RabbitListener(queues = RMQConfig.ORDER_QUEUE)
+    @RabbitListener(queues = RMQConfig.ORDER_QUEUE)
     @SneakyThrows
     public void receive(Order order) {
 
